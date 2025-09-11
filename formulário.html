@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulário.css">
+    <title>Inscrições Setembro</title>
+</head>
+<body>
+    <div class="container">
+        
+        <!--Div da Logo 50 anos Esesp-->
+        <div class="form-image">
+            <img src="../Imagem/esesp.png" alt="Logo 50 anos ESESP">
+        </div>
+
+
+        <!--Div do Formulário-->
+        <div class="form">
+            <form action="#" method="post">
+                
+                <div class="form-header">
+                    <h1>Inscrições Cursos Presenciais - ESESP - Setembro/25</h1>
+                </div>
+
+                <div class="input-group">
+
+                    <!--Email-->
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+
+                    <!--Nome Completo-->
+                    <div class="input-box">
+                        <label for="name">Nome Completo</label>
+                        <input id="name" type="text" name="name" placeholder="Sua resposta" required>
+                    </div>
+
+                    <!--CPF-->
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="Sua resposta" required>
+                    </div>
+
+                    <!--Email Institucional-->
+                    <div class="input-box">
+                        <label for="emailint">Email Institucional</label>
+                        <input id="emailint" type="email" name="emailint" placeholder="Sua resposta">
+                    </div>
+
+                    <!--Servidor-->
+                    <fieldset class="cargos">
+                        <legend>Você é:</legend>
+                        <div>
+                            <input id="estadual" type="radio" name="servidor" value="estadual">
+                            <label for="estadual">Servidor Estadual</label>
+                        </div>
+
+                        <div>
+                            <input id="municipal" type="radio" name="servidor" value="municipal">
+                            <label for="municipal">Servidor Municipal</label>
+                        </div>
+
+                        <div>
+                            <input id="civil" type="radio" name="servidor" value="civil">
+                            <label for="civil">Sociedade Civil Organizada</label>
+                        </div>
+                    </fieldset>
+
+                    <!--Órgão de Origem-->
+                    <div class="input-box">
+                        <label for="origem">Órgão de Origem</label>
+                        <input id="origem" type="text" name="origem" placeholder="Sua resposta">
+                    </div>
+
+                    <!--Número Funcional-->
+                    <div class="input-box">
+                        <label for="funcional">Número Funcional</label>
+                        <input id="funcional" type="text" name="funcional" placeholder="Sua resposta">
+                    </div>
+
+                    <!--Telefone de Contato-->
+                    <div class="input-box">
+                        <label for="contato">Telefone de Contato</label>
+                        <input id="contato" type="tel" name="contato" placeholder="(99) 99999-9999">
+                    </div>
+
+                    <!--Cursos-->
+                    <fieldset>
+                        <legend>Selecione o(s) Curso(s)</legend>
+                        <div>
+                            <input id="curso1" type="checkbox" name="curso[]" value="licitacoes">
+                            <label for="curso1">PRESENCIAL - NOVA LEI DE LICITAÇÕES PÚBLICAS: ASPECTOS GERAIS E PONTOS DE ATENÇÃO - INSCRIÇÕES 04/08 a 03/09 - REALIZAÇÃO 09/09 e 10/09 (HORÁRIO - 9h às 17h) 11/09 (09h às 12h30)</label>
+                        </div>
+                    </fieldset>
+
+                    <!--Termos-->
+                    <fieldset>
+                        <legend>Estou ciente que esta ficha de pré-inscrição não é a inscrição final...</legend>
+                        <div>
+                            <input id="termo1" type="radio" name="termo1" value="ciente">
+                            <label for="termo1">Estou Ciente</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Estou ciente que os dados inseridos estão protegidos pela LGPD...</legend>
+                        <div>
+                            <input id="termo2" type="radio" name="termo2" value="ciente">
+                            <label for="termo2">Estou Ciente</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Meu superior imediato está ciente da minha participação no(s) curso(s) escolhido(s).</legend>
+                        <div>
+                            <input id="termo3_sim" type="radio" name="termo3" value="sim">
+                            <label for="termo3_sim">Está ciente</label>
+                        </div>
+                        <div>
+                            <input id="termo3_nao" type="radio" name="termo3" value="nao">
+                            <label for="termo3_nao">Não está ciente</label>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <!--Botão de Envio e de limpar-->
+                <div class="envio">
+                    <button class="btn-enviar" type="submit" id="enviar"><a href="#">Enviar</a></button>
+                    <button class="btn-limpar" type="reset">Limpar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
