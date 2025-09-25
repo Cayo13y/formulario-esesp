@@ -6,6 +6,7 @@
 
 body {
     width: 100%;
+    background: linear-gradient(to top, #fd9a54, #f7b148, #efb943, #f6ca69, #fbe49f);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,8 +24,7 @@ body {
     overflow: hidden;}
 
 .container h1 {
-    text-align: left;
-}
+    text-align: left;}
 
 .form-image, .form {
     background-color: #d6d6d6;
@@ -54,7 +54,7 @@ body {
     display: block;
     width: clamp(6rem, 20vw, 12rem);
     height: 0.3rem;
-    background-color: orange;
+    background-color: rgb(255, 175, 28);
     margin-left: 5px;
     margin-top: 0.3rem;
     border-radius: 15px;}
@@ -117,7 +117,7 @@ fieldset div {
     margin-bottom: 0.3rem;}
 
 input[type="radio"] {
-    accent-color: orange;}
+    accent-color: #F58634;}
 
 .envio {
     display: flex;
@@ -133,7 +133,7 @@ input[type="radio"] {
     cursor: pointer;
     font-weight: 500;
     background-color: rgb(255,202,104);
-    transition: 0.2s;}
+    transition: 0.3s;}
 
 .envio button:hover {
     background-color: orange;
@@ -143,6 +143,7 @@ input[type="radio"] {
     .input-row { flex-direction: column; }
     .envio { flex-direction: column; }
     .envio button { width: 100%; }}
+
 
 
 
